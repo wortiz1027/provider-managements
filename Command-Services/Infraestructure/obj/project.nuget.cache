@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zAO6aO9S6pWUmuuWAulb+4/mEQ+20O6ipS4HMfEbBHNBAZR7Wu5NFHBmn4TCnTDKLOG4LBfGdB/luDVPYy1VHQ==",
+  "success": true,
+  "projectFilePath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\Infraestructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wortiz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wortiz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
