@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3wEky5Shi3KawShvV6UPz0biVpK4jqxBSrQh2ZZUPWk792n3W6UGW/UMHw/80eVu6zdo4/tdEiWtYs/g+Oozsw==",
+  "success": true,
+  "projectFilePath": "D:\\developer\\intellij\\provider-managements\\Query-Services\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wortiz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wortiz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

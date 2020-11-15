@@ -1,0 +1,12 @@
+D:\developer\intellij\provider-managements\Query-Services\Core\bin\Debug\netstandard2.0\Core.deps.json
+D:\developer\intellij\provider-managements\Query-Services\Core\bin\Debug\netstandard2.0\Core.dll
+D:\developer\intellij\provider-managements\Query-Services\Core\bin\Debug\netstandard2.0\Core.pdb
+D:\developer\intellij\provider-managements\Query-Services\Core\bin\Debug\netstandard2.0\Shared.dll
+D:\developer\intellij\provider-managements\Query-Services\Core\bin\Debug\netstandard2.0\Shared.pdb
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.csproj.CopyComplete
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.dll
+D:\developer\intellij\provider-managements\Query-Services\Core\obj\Debug\netstandard2.0\Core.pdb

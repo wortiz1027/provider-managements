@@ -24,6 +24,207 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj": {
+                "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj"
+              },
+              "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\Infraestructure.csproj": {
+                "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "Steeltoe.Discovery.ClientCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Steeltoe.Discovery.Eureka": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Steeltoe.Extensions.Configuration.ConfigServerCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Steeltoe.Extensions.Configuration.PlaceholderCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Steeltoe.Extensions.Logging.DynamicSerilogCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Steeltoe.Management.CloudFoundryCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\wortiz\\.nuget\\packages\\",
+        "outputPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wortiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\Infraestructure.csproj",
+        "projectName": "Infraestructure",
+        "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\wortiz\\.nuget\\packages\\",
+        "outputPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wortiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj": {
+                "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Core\\Core.csproj"
+              },
+              "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\wortiz\\.nuget\\packages\\",
+        "outputPath": "D:\\developer\\intellij\\provider-managements\\Command-Services\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\wortiz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -46,9 +247,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
