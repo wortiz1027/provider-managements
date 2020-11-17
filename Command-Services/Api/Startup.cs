@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Steeltoe.Discovery.Client;
 using Steeltoe.Management.CloudFoundry;
 using Steeltoe.Extensions.Configuration.ConfigServer;
+using Infraestructure.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api
 {
@@ -30,7 +32,12 @@ namespace Api
         {
             services.AddCloudFoundryActuators(Configuration);
             services.AddDiscoveryClient(Configuration);
+            //services.AddRabbitConnection(Configuration);
             services.AddControllers();
+            services.AddDbContext<ProvidersContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ProvidersConnection"))
+            );
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
