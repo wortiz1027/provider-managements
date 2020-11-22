@@ -1,20 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Steeltoe.Discovery.Client;
 using Steeltoe.Management.CloudFoundry;
-using Steeltoe.Extensions.Configuration.ConfigServer;
+using Steeltoe.Management.Endpoint;
 using Infraestructure.Context;
 using Microsoft.EntityFrameworkCore;
+using Steeltoe.Management.Endpoint.Metrics;
 
 namespace Api
 {
@@ -32,11 +26,15 @@ namespace Api
         {
             services.AddCloudFoundryActuators(Configuration);
             services.AddDiscoveryClient(Configuration);
-            //services.AddRabbitConnection(Configuration);
+            //services.AddRabbitConnection(Configuration);            
+            services.AddAllActuators(Configuration);
             services.AddControllers();
             services.AddDbContext<ProvidersContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("ProvidersConnection"))
             );
+            //services.AddInfoActuator(Configuration);
+            //services.AddHealthActuator(Configuration);
+            services.AddPrometheusActuator(Configuration);
             
         }
 
@@ -56,6 +54,7 @@ namespace Api
             {
                 endpoints.MapControllers();
             });
+            
             
         }
     }

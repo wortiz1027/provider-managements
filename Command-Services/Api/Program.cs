@@ -11,7 +11,8 @@ using Steeltoe.Extensions.Configuration.ConfigServer;
 using Steeltoe.Extensions.Logging.DynamicSerilog;
 using Steeltoe.Discovery.Client;
 using Steeltoe.Extensions.Configuration.Placeholder;
-
+using Steeltoe.Management.Endpoint;
+using Steeltoe.Management.Endpoint.Metrics;
 namespace Api
 {
      public class Program
@@ -19,6 +20,7 @@ namespace Api
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args)
+            //.AddPrometheusActuator()
             .Build()
             .Run();
         }

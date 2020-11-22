@@ -8604,6 +8604,7 @@
       "Steeltoe.Extensions.Configuration.PlaceholderCore >= 3.0.0",
       "Steeltoe.Extensions.Logging.DynamicSerilogCore >= 3.0.0",
       "Steeltoe.Management.CloudFoundryCore >= 3.0.0",
+      "Steeltoe.Management.EndpointCore >= 3.0.0",
       "Steeltoe.Messaging.RabbitMQ >= 3.0.0"
     ]
   },
@@ -8690,6 +8691,10 @@
             "version": "[3.0.0, )"
           },
           "Steeltoe.Management.CloudFoundryCore": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "Steeltoe.Management.EndpointCore": {
             "target": "Package",
             "version": "[3.0.0, )"
           },

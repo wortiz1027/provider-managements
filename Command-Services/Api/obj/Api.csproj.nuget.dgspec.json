@@ -87,6 +87,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "Steeltoe.Management.EndpointCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Steeltoe.Messaging.RabbitMQ": {
               "target": "Package",
               "version": "[3.0.0, )"
