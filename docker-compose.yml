@@ -1,0 +1,31 @@
+# -----------------------------------------------------------------------------
+# - DOCKERFILE
+# - AUTOR: Brian Suarez | Eduardo Franco | Jhon Celemin | Wilman Ortiz
+# - FECHA: 06-Octubre-2020
+# - DESCRIPCION: Docker-compose que permite la creacion del
+# -              contenedor con el servicio de comandos y queries de productos
+# ------------------------------------------------------------------------------
+
+version: '3.7'
+services:
+  providers-command-services:
+    image: providers-command-services:latest
+    container_name: providers-command-services
+    hostname: providers-command-services
+    restart: always
+    ports:
+      - 8094:8094
+    networks:
+      - ntw_backend
+  providers-query-services:
+    image: providers-query-services:latest
+    container_name: providers-query-services
+    hostname: providers-query-services
+    restart: always
+    ports:
+      - 8095:8095
+    networks:
+      - ntw_backend
+networks:
+  ntw_backend:
+    external: true
