@@ -29,5 +29,4 @@
     <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
-
 </Project>

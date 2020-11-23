@@ -10,28 +10,27 @@ namespace Api.Controllers {
 
     [ApiController]
     [Route("/providers/api/v1/")]
-    public class ProvidersAddCommandController : ControllerBase {
+    public class ProvidersDeleteCommandController : ControllerBase {
         
         private ProvidersContext _Context;
 
-        public ProvidersAddCommandController(ProvidersContext context) {
+        public ProvidersDeleteCommandController(ProvidersContext context) {
             _Context = context;
         }
 
-        [HttpPost("vendors")]
-        public IActionResult create([FromBody] CreateRequest data){
+        [HttpDelete("vendors")]
+        public IActionResult delete([FromBody] DeleteRequest data){
             if (data == null){
                 return BadRequest();
             }
 
             Status status = new Status();
-            status.code = Enum.GetName(typeof(StatusCodes), 0);
-            status.description = "Providers has been created succesfully";
+            status.code = Enum.GetName(typeof(StatusCodes), 2);
+            status.description = "Providers has been deleted succesfully";
 
             CreateResponse response = new CreateResponse();
             response.status = status;
             return Ok(response);
-            //return Ok(_Context.Types.ToList());
         }
     }
 

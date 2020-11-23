@@ -10,28 +10,27 @@ namespace Api.Controllers {
 
     [ApiController]
     [Route("/providers/api/v1/")]
-    public class ProvidersAddCommandController : ControllerBase {
+    public class ProvidersUpdateCommandController : ControllerBase {
         
         private ProvidersContext _Context;
 
-        public ProvidersAddCommandController(ProvidersContext context) {
+        public ProvidersUpdateCommandController(ProvidersContext context) {
             _Context = context;
         }
 
-        [HttpPost("vendors")]
-        public IActionResult create([FromBody] CreateRequest data){
+        [HttpPut("vendors")]
+        public IActionResult update([FromBody] UpdateRequest data){
             if (data == null){
                 return BadRequest();
             }
 
             Status status = new Status();
-            status.code = Enum.GetName(typeof(StatusCodes), 0);
-            status.description = "Providers has been created succesfully";
+            status.code = Enum.GetName(typeof(StatusCodes), 1);
+            status.description = "Providers has been updated succesfully";
 
             CreateResponse response = new CreateResponse();
             response.status = status;
             return Ok(response);
-            //return Ok(_Context.Types.ToList());
         }
     }
 
