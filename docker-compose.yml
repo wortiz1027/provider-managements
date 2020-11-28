@@ -9,7 +9,7 @@
 version: '3.7'
 services:
   providers-command-services:
-    image: providers-command-services:latest
+    image: wortiz1027/providers-command-services:latest
     container_name: providers-command-services
     hostname: providers-command-services
     restart: always
@@ -18,7 +18,7 @@ services:
     networks:
       - ntw_backend
   providers-query-services:
-    image: providers-query-services:latest
+    image: wortiz1027/providers-query-services:latest
     container_name: providers-query-services
     hostname: providers-query-services
     restart: always
